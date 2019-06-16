@@ -1,0 +1,1283 @@
+<!DOCTYPE HTML PUBLIC>
+
+<!-- Alex's GT Turbo pages -->
+<!-- Page: Tips and tricks page 9 -->
+<!-- Language: french -->
+<!-- Version: 4.02 -->
+<!-- Last update: 09-mar-99 -->
+
+<HTML>
+<HEAD>
+<TITLE>Pages Renault 5 GT Turbo d'Alex: Trucs et astuces sur la suspension et la direction</TITLE>
+<META NAME="keywords" CONTENT="Renault, 5, GT, Turbo, m&eacute;canique, pr&eacute;paration, tuning">
+<META NAME="description" CONTENT="Pages GT Turbo d'Alex">
+
+<SCRIPT LANGUAGE="javascript">
+
+function num1() {       
+  v1=(document.wheel_length.width.value);
+  v2=(document.wheel_length.profile.value);
+  v3=(document.wheel_length.wheel.value);
+
+  var res=2*3.141592*(12.319*v3+0.0097*v1*v2)/1000;  // Length calculation
+  
+  if (v1<135 || v1>335){
+    alert("Largeur=" + v1 + " mm hors limites. Utiliser une valeur entre 135 et 335.");
+    return(false);
+  } else if (v2<35 || v2>80){
+    alert("Profil=" + v2 + " hors limites. Utiliser une valeur entre 35 et 80.");
+    return(false);
+  } else if (v3<12 || v3>19){
+    alert("Jantes=" + v3 + " pouces hors limites. Utiliser une valeur entre 12 et 19.");
+    return(false);
+  } else {
+    document.wheel_length.length.value=res;
+    return(true);
+  }
+}
+</script>
+
+
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#D0D0D0" LINK="#CC8000" VLINK="#ffffff">
+
+<CENTER><IMG SRC="fire5__f.gif" ALT="Pages GT Turbo d'Alex" WIDTH=630 HEIGHT=85>
+
+<P><IMG SRC="l_ste.gif" ALT="Suspension et direction" WIDTH=88 HEIGHT=46>
+<H1>Trucs et astuces: Suspension et direction</H1>
+
+</CENTER>
+
+<P>
+<A NAME=wheels>
+<IMG SRC="th_ok.gif" ALT="Fait!" ALIGN=RIGHT WIDTH=50 HEIGHT=50>
+<IMG SRC="dific1.gif" ALT="Difficult&eacute; 1/5" ALIGN=RIGHT WIDTH=161 HEIGHT=43>
+<H2>Changer ses roues</H2>
+</A>
+
+<H3>Intro:</H3>
+
+<P>Les jantes de s&eacute;rie en 13 doivent &ecirc;tre utilis&eacute;e avec des<A HREF="tecst9_f.htm#tyres">pneus</A>
+au profil relativement haut comme 175/65/13 ou 195/55/13, pour &eacute;viter d'avoir des d&eacute;veloppements
+trop courts. On peut utiliser des profils plus bas en changeant le pneu et la jante et en
+utilisant des jantes de 14, 15 ou m&ecirc;me 16 pouces.
+
+
+<H3>Proc&eacute;d&eacute;:</H3>
+
+<P>D&eacute;cider de la taille de la jante et du pneu que l'on veut monter. Remarquer qu'un
+diam&egrave;tre total de jante et pneu diff&eacute;rent:
+
+<UL>
+  <LI>Changera les d&eacute;veloppements. Des roues plus grandes donneront une meilleure
+	vitesse de pointe (si le moteur y arrive), mais  diminueront l'acc&eacute;l&eacute;ration, et
+	vice-versa.
+  <LI>Changera les indications du compteur kilom&eacute;trique. Des roues plus grandes feront
+	que une vitesse plus faible sera lue.
+  <LI>Changera la maniabilit&eacute; de la voiture.
+  <LI>Pourra amener des probl&egrave;mes au niveau des passages de roues. Le GT Turbo
+	touche dans les ailes si on braque &agrave; fond en 195/50/15, par exemple, et
+	des jantes en 16 pouces demande g&eacute;n&eacute;ralement une modification des passages
+	de roues arri&egrave;res.
+</UL>
+
+<P>Ceci est un tableau approximatif pour comparer des diam&egrave;tres de jante+pneus
+avec diff&eacute;rentes combinaisons pour la largeur, le profil et la jante. Quelques
+possibilit&eacute;s pour le GT Turbo sont de <FONT COLOR="#d00000">cette couleur</FONT>.
+
+<P>
+<CENTER>
+<TABLE BORDER=1>
+  <TR>
+    <TD ALIGN=CENTER><B>&Oslash;</B></TD>
+    <TD ALIGN=CENTER><B>80</B></TD>
+    <TD ALIGN=CENTER><B>70</B></TD>
+    <TD ALIGN=CENTER><B>65</B></TD>
+    <TD ALIGN=CENTER><B>60</B></TD>
+    <TD ALIGN=CENTER><B>55</B></TD>
+    <TD ALIGN=CENTER><B>50</B></TD>
+    <TD ALIGN=CENTER><B>45</B></TD>
+    <TD ALIGN=CENTER><B>40</B></TD>
+    <TD ALIGN=CENTER><B>35</B></TD>
+  </TR>
+  <TR>
+    <TD><B>530</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>155/65R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">195/45R14</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>145/70R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">185/55R13</FONT></TD>
+    <TD><FONT COLOR="#d00000">175/50R14</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">175/60R13</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>540</B></TD>
+    <TD>145R12</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>160/65R13</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">195/55R13</FONT></TD>
+    <TD><FONT COLOR="#d00000">185/50R14</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>135R13</TD>
+    <TD>155/70R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>155R12</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>550</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">185/60R13</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>165/60R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">195/45R15</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>560</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>165/70R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>145R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">175/60R14</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>165/65R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>570</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/60R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>215/45R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>155R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">185/60R14</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD><FONT COLOR="#d00000">195/50R15</FONT></TD>
+    <TD>&nbsp;</TD>
+    <TD>215/40R16</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>175/70R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>580</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>195/45R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>175/65R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>185/55R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/40R16</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>125R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/50R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>145R14</TD>
+    <TD>185/70R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>195/60R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/45R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/35R17</TD>
+  </TR>
+  <TR>
+    <TD><B>590</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>165/70R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>165R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>185/65R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>195/55R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>135R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>600</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>175/70R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>195/50R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>155R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>215/40R17</TD>
+    <TD>245/35R17</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>165R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/55R15</TD>
+    <TD>225/50R15</TD>
+    <TD>225/45R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>195/65R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>610</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/50R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>185/70R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>195/60R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>235/40R17</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>620</B></TD>
+    <TD>165R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>185/65R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>185R13</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>245/45R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/60R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>215/45R17</TD>
+    <TD>245/40R17</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>155R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>630</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/55R16</TD>
+    <TD>225/50R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>175R14</TD>
+    <TD>195/70R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/45R17</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>195/65R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>255/40R17</TD>
+    <TD>255/35R18</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/50R17</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/40R18</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>215/60R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>640</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>265/35R18</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/70R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>235/45R17</TD>
+    <TD>265/40R17</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>165R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>235/40R18</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/65R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>215/50R17</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>185R14</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>275/35R18</TD>
+  </TR>
+  <TR>
+    <TD><B>650</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/60R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>245/50R16</TD>
+    <TD>245/45R17</TD>
+    <TD>275/40R17</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/55R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>245/40R18</TD>
+    <TD>315/35R17</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>285/35R18</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/50R17</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>175R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>660</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>215/65R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>255/50R16</TD>
+    <TD>255/45R17</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>235/60R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>295/35R18</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>335/35R17</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>205/70R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>670</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>185R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/65R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>225/60R16</TD>
+    <TD>245/55R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD><B>680</B></TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>285/35R19</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>215/70R15</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>285/40R18</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>235/60R16</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>255/40R19</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<P>En prenant en compte la d&eacute;formation du flan du pneu, il existe une formule
+pour caculer la LONGUEUR totale en mm d'un tour de roue pour une
+LARGEUR(mm)/PROFIL/JANTE(pouces) donn&eacute;:
+
+<P ALIGN=CENTER>
+<FONT SIZE=+1>LONGUEUR=2*PI*(12,319*JANTE+0.0097*LARGEUR*PROFIL)</FONT>
+
+<FORM NAME="wheel_length" >
+<p>On peut essayer diff&eacute;rentes valeurs "on-line":
+
+<CENTER>
+<TABLE CELLSPACING=10 BORDER=0>
+<TR><TD><B>Largeur</B></TD>
+    <TD>&nbsp;</TD>
+    <TD><B>Profil</B></TD>
+    <TD><B>Jante</B></TD>
+    </TR>
+<TR><TD ALIGN=CENTER><INPUT TYPE="text" NAME="width" SIZE="3"></TD>
+    <TD ALIGN=CENTER>/</TD>
+    <TD ALIGN=CENTER><INPUT TYPE="text" NAME="profile" SIZE="2"></TD>
+    <TD ALIGN=CENTER><INPUT TYPE="text" NAME="wheel" SIZE="2"></TD>
+</TABLE>
+<P><INPUT TYPE="button" VALUE="Calculer" ONCLICK="num1()">&nbsp;&nbsp;&nbsp;&nbsp;
+<B>Longueur parcourue en un tour:</B><INPUT TYPE="text" NAME="length" size="4"><B> m</B>
+</CENTER>
+
+</FORM>
+
+<P>J'ai d&eacute;cid&eacute; de changer mes jantes d'origines en 13 pouces par un jeu
+de 15 pouces de Clio Williams achet&eacute; d'occasion, en changeant les pneus
+d'origines qui &eacute;taient 175/60/13 pour des 195/45/15.
+
+<P>Le changement de d&eacute;veloppement r&eacute;sultant est, en utilisant la formule
+du dessus:
+
+<P><CENTER>
+<TABLE BORDER=0>
+ <TR>
+  <TD>Pneu 175/60 13 de s&eacute;rie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD><TD>1.65 m</TD>
+ </TR>
+ <TR>
+  <TD>Pneu 195/55 13 de s&eacute;rie</TD><TD>1.66 m</TD>
+ </TR>
+ <TR>
+  <TD>Pneu 195/45 15 </TD><TD>1.69 m</TD>
+ </TR>
+</TABLE></CENTER>
+
+<P>Le r&eacute;sultat est que j'ai un d&eacute;veloppement jante+pneu un peu plus long, le
+moteur est ainsi plus relax&eacute; sur autoroute, l'acc&eacute;l&eacute;ration est un peu moindre
+et le fait d'avoir un profil plus bas durcit la direction et la rend plus pr&eacute;cise.
+Mais maintenant, comme l'a dit quelqu'un, elle ne va pas envoyer un fax avant de
+passer la limite d'adh&eacute;rence:-), car la sensation d'&ecirc;tre &agrave; la limite de l'adh&eacute;rence
+donn&eacute;e par la d&eacute;formation des flans des pneus n'y est plus! J'ai &eacute;galement remarqu&eacute;
+qu'une diff&eacute;rence d'adh&eacute;rence du fait d'&ecirc;tre plus large et d'avoir une meilleure
+qualit&eacute; de gomme (Avant, j'avais des pneus "bon march&eacute;").
+
+
+<P><CENTER>
+<TABLE BORDER=0><TR>
+<TD>Les jantes de Clio Williams n'ont pas plus de <A HREF="tecst9_f.htm#wheels">
+d&eacute;port</A>, la majeure augmentation de la largeur se retrouve donc &agrave; l'int&eacute;rieur
+de la voiture, comme on peut (essayer de) le voir sur la photo sur laquelle
+on voit une ancienne jante et une nouvelle qui sont sur des bo&icirc;tes de
+conserve d'olives de m&ecirc;me hauteur. La partie du dessus est le c&ocirc;t&eacute; ext&eacute;rieur
+de la roue:</TD>
+<TD ROWSPAN=2><IMG SRC="comprue.gif" ALT="Comparaison des jantes 1" WIDTH=133 HEIGHT=195></TD>
+</TR><TR>
+<TD ALIGN=CENTER><IMG SRC="olives.jpg" ALT="Comparaison des jantes 2" WIDTH=247 HEIGHT=100></TD>
+</TR></TABLE></CENTER>
+
+<H3>Remarques:</H3>
+
+<P>Les nouveaux pneus, du moins ce que j'ai mont&eacute;s, ont eu besoin d'&ecirc;tre rod&eacute;s un peu
+avant de leur en mettre plein la vue. On a l'impression qu'ils ont une petite couche
+protectrice de cire pour le stockage dont l'adh&eacute;rence est loin d'&ecirc;tre celle de la gomme.
+
+<P>Avec une combinaison de roues diff&eacute;rentes, il faudra chercher les pressions de gonflage
+id&eacute;ales. La m&eacute;thode pr&eacute;cise n&eacute;cessite un bon moyen de mesure de la temp&eacute;rature
+des pneus et faire qu'en sorte que, apr&eacute;s avoir circul&eacute; sur le type de terrain
+sur lequel on va utiliser la voiture, la temp&eacute;rature &agrave; l'int&eacute;rieur, l'ext&eacute;rieur
+et au centre de la gomme soit identique.
+
+<P>J'ai commenc&eacute; avec 2.2 bar (32 psi) dans les quatres et j'ai remarqu&eacute; que la
+voiture &eacute;tait un peu trop vive de l'arri&egrave;re, mais en fait, c'&eacute;tait parce que je
+n'avais pas encore &eacute;limin&eacute; toute la couche protectrice. Pendant un moment, j'ai
+mis 2.1 bar (30.5 psi) &agrave; l'AV et 1.9 bar (27.5 psi) &agrave; l'AR mais je suis finalement
+revenu &agrave; 2.3 bar (33.3 psi) partout et &ccedil;a parait mieux... Il se peut que je ne
+sois pas un fin pilote...
+
+<P>Un changement s&eacute;rieux de roues devrait aller de paire avec une v&eacute;rification
+et un r&eacute;glage du train avant. Sinon, une usure anormale ou une mauvaise maniabilit&eacute;
+pourraient apparaitre.
+
+<P><CENTER>
+<TABLE BORDER=0>
+<TR>
+<TD><IMG SRC="front04.jpg" ALT="Roues de s&eacute;rie" WIDTH=320 HEIGHT=187></TD>
+<TD><IMG SRC="fuenla01.jpg" ALT="Nouvelles roues" WIDTH=320 HEIGHT=187></TD>
+</TR>
+</TABLE></CENTER>
+
+
+<P>
+<A NAME=separator>
+<IMG SRC="th_ok.gif" ALT="Fait!" ALIGN=RIGHT WIDTH=50 HEIGHT=50>
+<IMG SRC="dific2.gif" ALT="Difficult&eacute; 2/5" ALIGN=RIGHT WIDTH=161 HEIGHT=43>
+<H2>Aider son &eacute;paule</H2>
+</A>
+
+<H3>Intro:</H3>
+
+<P>La position de conduite id&eacute;ale doit pouvoir permettre de tourner compl&eacute;tement le
+volant avec l'&eacute;paule totalement appuy&eacute;e contre le si&egrave;ge. Dans les petites voitures
+comme le GT Turbo (la plupart des voitures fran&ccedil;aises ont cette tendance), les
+p&eacute;dales sont assez proches du si&egrave;ge, et si on le r&egrave;gle pour les utiliser
+confortablement et compl&eacute;tement, il se peut que l'on se retrouve un peu loin
+du volant.
+
+<TABLE BORDER=0><TR>
+
+<TD>
+<H3>Proc&eacute;d&eacute;:</H3>
+
+<P>Se faire un s&eacute;parateur de volant. C'est aussi facile que de se munir
+de vis de 5 mm (cl&eacute; Allen) de 20mm + la s&eacute;paration voulue et faire une
+pi&egrave;ce cylindrique comme celle de la figure. Elle a un diam&egrave;tre int&eacute;rieur
+de 65mm et l'ext&eacute;rieur vaut 98mm. L'&eacute;paisseur d&eacute;pend de chacun. (Moi,
+j'ai mis 20 mm).
+
+
+<P>Enlever les vis BTR d'origines y utiliser le volant pour rep&eacute;rer
+les positions exactes des trous. Percer la pi&egrave;ce, la monter et
+se divertir!
+
+</TD>
+<TD><IMG SRC="separa.gif" ALT="S&eacute;parateur de volant" WIDTH=200 HEIGHT=200></TD>
+</TR></TABLE>
+
+<H3>Remarques:</H3>
+
+<P>Comme l'axe du volant n'est pas horizontal, le d&eacute;placement d&eacute;sirer vient
+avec une petite &eacute;l&eacute;vation qu'il faut prendre en compte.
+
+<P>Un autre point se situe au niveau de la commande des clignotants qui s'&eacute;loigne. Avec 20 mm,
+je crois que c'est juste une question d'habitude, mais en utilisant un s&eacute;parateur plus radical
+et que l'on veut continuer &agrave; s'en servir, il faudra penser &agrave; une extension de levier.
+
+<P>
+<A NAME=shocks>
+<IMG SRC="th_ok.gif" ALT="Fait!" ALIGN=RIGHT WIDTH=50 HEIGHT=50>
+<IMG SRC="dific3.gif" ALT="Difficult&eacute; 3/5" ALIGN=RIGHT WIDTH=161 HEIGHT=43>
+<H2>Durcir la suspension avant</H2>
+</A>
+
+<H3>Intro:</H3>
+
+<P>Les amortisseurs d'origine du GT Turbo son assez fermes si on les
+compare avec ceux de type "confortable" que l'on trouve dans les autres
+voitures, mais comme ils s'usent petit &agrave; petit (50.000 km est un ordre
+d'id&eacute;e de sa dur&eacute;e de vie, mais ils foctionnent encore (mal) plus
+longtemps), si on a besoin de les changer, on peut en trouver des meilleurs
+(gaz/huile ou gaz, par exemple) et avec des r&eacute;glages plus durs pour am&eacute;liorer
+la tenue de route.
+
+<P>Les amortisseurs arri&egrave;res sont un cas &agrave; part. Ils ont tendance &agrave; durer
+davantage car ils ne supportent pas autant de poids et bien qu'une meilleure
+qualit&eacute; est toujours souhaitable, il y a des gens qui pensent qu'un amortisseur
+trop dur fait trop sauter l'arri&egrave;re sur une surface avec des bosses.
+
+<P>Une bonne solution est d'installer des amortisseurs r&eacute;glables. J'ai choisis
+des Koni Sport jaunes pour devant et j'ai laiss&eacute; les amortisseurs de s&eacute;rie,
+toujours en vie pour l'instant, &agrave; l'arri&egrave;re
+
+<H3>Proc&eacute;d&eacute;:</H3>
+
+<P>Pour sortir l'&eacute;l&eacute;ment de suspension complet, il y a seulement deux
+vis qui le fixent &agrave; la fus&eacute;e (Vis toujours vers l'arri&egrave;re de la voiture) et
+deux autres &agrave; la t&ecirc;te d'amortisseur. Attacher la fus&eacute;e au support du flexible de
+frein dans le passage de roue pour &eacute;viter qu'elle ne tombe une fois que l'&eacute;l&eacute;ment
+de suspension sera d&eacute;pos&eacute;.
+
+<P>Pour le d&eacute;monter, il faut utiliser un compresseur de ressort, et il
+faut le faire avec beaucoup de pr&eacute;caution, car si le ressort saute d'un coup,
+&ccedil;a peut &ecirc;tre tr&egrave;s dangeureux. Fixer l'ensemble sur un &eacute;tau, comprimer le ressort
+pour que la coupelle soit libre, enlever le capuchon en plastique et, en maintenant
+la tige de l'amortisseur avec une cl&eacute; Allen, enlever la vis sup&eacute;rieure. V&eacute;rifier, de
+bas en haut, le ressort, le cache poussi&egrave;re, la coupelle, roulement (le graisser), 
+l'entretoise, la but&eacute;e caoutchouc (il peut &ecirc;tre int&eacute;ressant d'en mettre une neuve),
+support et la coupelle d'appui. Ces deux derniers peuvent &ecirc;tre ovalis&eacute;s
+si la voiture a roul&eacute; avec les &eacute;crous dess&eacute;r&eacute;s, et une remise &agrave; neuf
+peut &ecirc;tre n&eacute;cessaire. Remonter l'ensemble sur le nouvel amortisseur
+dans l'ordre inverse.
+
+<P>Les amortisseurs neufs doivent &ecirc;tre rod&eacute;s, notament avant de les r&eacute;gler en
+position dure!
+
+<P>R&eacute;gler les amortisseurs &agrave; son go&ucirc;t. Plus ils seront durs, plus la
+voiture aura un bon comportement sur des surfaces en bon &eacute;tat, en entrant
+bien dans les courbes. Mais dans les trous, la voiture tend &agrave; sauter et
+perd l'adh&eacute;rence, c'est donc question de trouver la duret&eacute; que l'on pr&eacute;f&egrave;re.
+
+<H3>Remarque:</H3>
+
+<P>Les Konis ne sont pas fournis avec un &eacute;crou auto-bloquant, et tendent
+&agrave; se desserrer. Il est beaucoup mieux d'acheter une paire d'&eacute;crous
+auto-bloquants pour &eacute;viter ceci.
+
+<P>Si on pr&eacute;voit de rabaisser sa voiture, on aura besoin de ressorts courts.
+Il est intelligent de changer les amortisseurs et les ressorts en m&ecirc;me temps.
+
+<P>Avec des suspensions plus dures, le chassis doit encaisser des efforts plus
+intenses. Une <A HREF="tric10_f.htm#strutbar">barre anti-rapprochement</A> peut
+&ecirc;tre une bonne id&eacute;e pour le renforcer.
+
+<P> <!-- Footer -->
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD><A HREF="gttint_f.htm"><IMG SRC="foot_1_f.gif" ALT="Index" WIDTH=77 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="trick9.htm"><IMG SRC="foot_2_f.gif" ALT="Version anglaise" WIDTH=131 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="trick9_e.htm"><IMG SRC="foot_3_f.gif" ALT="Version espagnole" WIDTH=141 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="http://www.etsit.upm.es/~alex/gtt/gttint_f.htm"><IMG SRC="foot_4_f.gif" ALT="Autre serveur" WIDTH=108 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="credit_f.htm"><IMG SRC="foot_5_f.gif" ALT="Alex" WIDTH=50 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="email__f.htm"><IMG SRC="foot_6_f.gif" ALT="Ecrire &agrave; Alex" WIDTH=118 HEIGHT=40 BORDER=0></A></TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
