@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC>
+
+<!-- Alex's GT Turbo pages -->
+<!-- Page: Technical page 9 -->
+<!-- Language: English -->
+<!-- Version: 4.03 -->
+<!-- Last update: 20-mar-99 -->
+
+<HTML>
+<HEAD>
+<TITLE>Alex's Renault 5 GT Turbo pages: Suspension and steering technical page</TITLE>
+<META NAME="keywords" CONTENT="Renault, 5, GT, Turbo, mechanics, preparation, tuning">
+<META NAME="description" CONTENT="Alex's GT Turbo pages">
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#D0D0D0" LINK="#CC8000" VLINK="#ffffff">
+
+<CENTER><IMG SRC="fire5.gif" ALT="Alex's GT Turbo pages" WIDTH=630 HEIGHT=85>
+
+<P><IMG SRC="l_ste.gif" ALT="Suspension and steering" WIDTH=88 HEIGHT=46>
+<H1>Technical page: Suspension and steering</H1>
+
+</CENTER>
+
+<P>
+<A NAME=tracking>
+<H2>Wheel tracking geometry</H2>
+</A>
+
+<P>Wheels are three-dimensional items and so they can turn in many
+positions. Their relative position to the car or tracking depends on
+four different angles.
+<P>In the images, the angles have been increased to be easily seen. The 
+<FONT COLOR="#ff0000">red</FONT> arrows point to the outer of
+the car (right or left sides), the <FONT COLOR="#00ff00">green</FONT> ones
+always to the front of the car and the <FONT COLOR="#0000ff">blue</FONT> ones
+to the top of the car.
+
+<TABLE BORDER=0>
+ <TR>
+ <TD><H3>Caster angle (a)</H3> 
+  <UL>
+   <LI>Angle between the wheel orientation axis and a vertical plane
+    in the right-left direction. In McPherson struts it's given by the shock 
+    absorber position, so not easily adjustable. Sometimes it's modified
+    by moving the lower suspension arm silentblocks.
+   <LI>Value: 1&deg;30' - 3&deg;30' for underbody heights between 50 and 130 mm.
+   <LI>Sign: The caster angle is positive when the bottom of the shock 
+    absorber is closer to the front of the car. 
+   <LI>Effect: It gives stability to the steering when straight, and makes
+    it return to the centered position. Less caster angle makes the car
+    turn better into corners, but has an effect of understeer when exiting.
+    It also makes the steering more 'lively' in bumps.
+  </UL>
+ </TD>
+ <TD><IMG SRC="ang_av.gif" ALT="Caster angle" HSPACE=10 WIDTH=174 HEIGHT=174></TD>
+ </TR>
+</TABLE>
+<TABLE BORDER=0>
+ <TR>
+ <TD><H3>Camber angle (b)</H3> 
+  <UL>
+   <LI>It's given by the wheel inclination with a vertical plane in the
+    front-rear direction, and even not being easily adjustable, it's 
+    sometimes modified by working on the suspension strut holes used to 
+    bolt the stub axle carrier.
+   <LI>Value: -1&deg; &plusmn;30'.
+   <LI>Sign: The camber angle is positive when the top of the wheel is closer
+    to the outer part of the car. 
+   <LI>Effects: Positive values were used to keeps the wheel pressed to the 
+    axle and reduce the forces in the hubs, but nowadays negative values are 
+    used to increase traction in bends and stability.
+  </UL>
+ </TD>
+ <TD><IMG SRC="ang_ca.gif" ALT="Caster angle" HSPACE=10 WIDTH=174 HEIGHT=174></TD>
+ </TR>
+</TABLE>
+<TABLE BORDER=0>
+ <TR>
+ <TD><H3>Steering axis inclination (c)</H3>
+  <UL>
+   <LI>Angle between the wheel orientation axis and the vertical 
+    plane in the front-rear position. In McPherson struts it's given
+    by the shock absorber position, not easily adjustable and seldom
+    modified.
+   <LI>Value: 13&deg;10' &plusmn;30' Ph1 / 9&deg; &plusmn;30' Ph2.
+   <LI>Sign: The steering axis inclination is positive when the bottom of
+    the shock absorber is closer to the outer part of the car.
+   <LI>Effects: It can compensate the lack of camber angle. It makes the
+    steering easier to turn and, like caster angle, eases the wheel returning
+    to the centered position. It also compensates straight deviation.
+  </UL></TD>
+ <TD><IMG SRC="ang_pi.gif" WIDTH=174 HEIGHT=174 ALT="Steering axis inclination" HSPACE=10></TD>
+ </TR>
+</TABLE>
+<TABLE BORDER=0>
+ <TR>
+ <TD><H3>Toe-out (d)</H3>
+ <UL>
+   <LI>Angle between the vertical planes in the front-rear direction on
+    each wheel. It's adjusted by the steering track rods length, and so it's
+    the only easily adjustable angle in a wheel alignment routine procedure.
+   <LI>Value: 0&deg;10' &plusmn;10'.
+   <LI>Sign: The toe-out is positive when the front of the wheels is farther
+    away than the rear.
+   <LI>Effects: It compensates the front wheel tendency to close when the
+    rotation torque of the engine is applied to them. It lightens the
+    steering, making it more aggressive, but centering them becomes more
+    difficult.
+ </UL></TD>
+ <TD><IMG SRC="ang_co.gif" ALT="Toe-out" HSPACE=10 WIDTH=350 HEIGHT=174></TD>
+ </TR>
+</TABLE>
+
+<P>
+<A NAME=wheels>
+<H2>Wheel decoding</H2>
+</A>
+
+<P>Wheels are identified with some number, for example for the standard GTT
+one, of the kind:
+
+<CENTER>
+<TABLE CELLSPACING=20>
+<TR><TD ALIGN=CENTER><FONT SIZE=+2>5.5</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>J</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>13</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>ET</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>36</FONT></TD>
+<TR><TD>Width</TD>
+    <TD>Edge shape</TD>
+    <TD>External diameter</TD>
+    <TD>&nbsp;</TD>
+    <TD>Offset</TD></TR>
+</TABLE>
+</CENTER>
+
+<P>The wheel width (5.5) and diameter (13) are given in inches. The rim
+shape (J) is a code and the offset (36), in mm,  that is usually  NOT
+written, is the distance between the central plane that would divide wheel
+tyre width in two equal parts and the parallel plane of the hub surface.
+A positive number here means that the hub surface is more external than
+the middle wheel plane, so as ET decreases and even becomes negative the
+track width increases.
+
+<P>Renault wheels (included the GTT standard one) usually have ET 36 mm.
+The <A HREF="cup.htm">Cup version</A> wheels enlarged 40mm the track width
+being the same width (5.5 B 13) because they had ET 16 mm.
+
+<P>Another data in the wheel is the bolt data or PCD. For the GTT:
+
+<CENTER>
+<TABLE CELLSPACING=20>
+<TR><TD ALIGN=CENTER><FONT SIZE=+2>100</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>x</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>4</FONT></TD>
+<TR><TD ALIGN=CENTER>Bolt location</TD>
+    <TD>&nbsp;</TD>
+    <TD>Number of bolts</TD>
+</TABLE>
+</CENTER>
+<P>The bolt location is the diameter of the circle made with the bolt
+centers, in mm. The last parameter that you can specify on a wheel is
+the centre bore diameter. It's 60.1 mm for the GTT hubs (And Renault in
+general).
+
+<P>
+<A NAME=tyres>
+<H2>Tyre decoding</H2>
+</A>
+
+<P>Tyres are also identified by a number, for example for the standard GTT
+tyre, like:
+
+<CENTER>
+<TABLE CELLSPACING=20>
+<TR><TD ALIGN=CENTER><FONT SIZE=+2>175</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>/</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>60</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>R</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>13</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>76</FONT></TD>
+    <TD ALIGN=CENTER><FONT SIZE=+2>H</FONT></TD></TR>
+<TR><TD>Width</TD>
+    <TD>&nbsp;</TD>
+    <TD>Profile</TD>
+    <TD>Radial</TD>
+    <TD>Inner diameter</TD>
+    <TD>Charge code</TD>
+    <TD>Speed code</TD>
+    </TR>
+</TABLE>
+</CENTER>
+
+<P>The tyre width (175) is given in mm, while the inner tyre diameter (13) is
+given in inches. The tyre profile (60) is specified as the % of the tyre
+width. The speed (H) codes are chosen from a table:
+
+<P><CENTER><TABLE BORDER=1 CELLPADDING=5>
+<TR><TD><B>Speed code</B></TD>
+<TD ALIGN=CENTER>R</TD><TD ALIGN=CENTER>S</TD><TD ALIGN=CENTER>T</TD><TD ALIGN=CENTER>U</TD>
+<TD ALIGN=CENTER>H</TD><TD ALIGN=CENTER>V</TD><TD ALIGN=CENTER>W</TD><TD ALIGN=CENTER>Z</TD></TR>
+<TR><TD><B>Max speed (km/h)</B></TD>
+<TD ALIGN=CENTER>170</TD><TD ALIGN=CENTER>180</TD><TD ALIGN=CENTER>190</TD><TD ALIGN=CENTER>200</TD>
+<TD ALIGN=CENTER>210</TD><TD ALIGN=CENTER>240</TD><TD ALIGN=CENTER>270</TD><TD ALIGN=CENTER>+270</TD></TR>
+</TABLE>
+</CENTER>
+
+<P>The charge (76) codes are also chosen from a table:
+
+<CENTER>
+<P><TABLE BORDER=1 CELLPADDING=5>
+<TR><TD><B>Charge code</B></TD>
+<TD ALIGN=CENTER>60</TD><TD ALIGN=CENTER>61</TD><TD ALIGN=CENTER>62</TD>
+<TD ALIGN=CENTER>63</TD><TD ALIGN=CENTER>64</TD><TD ALIGN=CENTER>65</TD>
+<TD ALIGN=CENTER>66</TD><TD ALIGN=CENTER>67</TD><TD ALIGN=CENTER>68</TD>
+<TD ALIGN=CENTER>69</TD></TR>
+<TR><TD><B>Max weight (kg)</B></TD>
+<TD ALIGN=CENTER>250</TD><TD ALIGN=CENTER>257</TD><TD ALIGN=CENTER>265</TD>
+<TD ALIGN=CENTER>272</TD><TD ALIGN=CENTER>280</TD><TD ALIGN=CENTER>290</TD>
+<TD ALIGN=CENTER>300</TD><TD ALIGN=CENTER>307</TD><TD ALIGN=CENTER>315</TD>
+<TD ALIGN=CENTER>325</TD></TR><TR><TD></TD><TR>
+<TR><TD><B>Charge code</B></TD>
+<TD ALIGN=CENTER>70</TD><TD ALIGN=CENTER>71</TD><TD ALIGN=CENTER>72</TD>
+<TD ALIGN=CENTER>73</TD><TD ALIGN=CENTER>74</TD><TD ALIGN=CENTER>75</TD>
+<TD ALIGN=CENTER>76</TD><TD ALIGN=CENTER>77</TD><TD ALIGN=CENTER>78</TD>
+<TD ALIGN=CENTER>79</TD></TR>
+<TR><TD><B>Max weight (kg)</B></TD>
+<TD ALIGN=CENTER>335</TD><TD ALIGN=CENTER>345</TD><TD ALIGN=CENTER>355</TD>
+<TD ALIGN=CENTER>365</TD><TD ALIGN=CENTER>375</TD><TD ALIGN=CENTER>387</TD>
+<TD ALIGN=CENTER>400</TD><TD ALIGN=CENTER>412</TD><TD ALIGN=CENTER>425</TD>
+<TD ALIGN=CENTER>437</TD></TR><TR><TD></TD><TR>
+<TR><TD><B>Charge code</B></TD>
+<TD ALIGN=CENTER>80</TD><TD ALIGN=CENTER>81</TD><TD ALIGN=CENTER>82</TD>
+<TD ALIGN=CENTER>83</TD><TD ALIGN=CENTER>84</TD><TD ALIGN=CENTER>85</TD>
+<TD ALIGN=CENTER>86</TD><TD ALIGN=CENTER>87</TD><TD ALIGN=CENTER>88</TD>
+<TD ALIGN=CENTER>89</TD></TR>
+<TR><TD><B>Max weight (kg)</B></TD>
+<TD ALIGN=CENTER>450</TD><TD ALIGN=CENTER>462</TD><TD ALIGN=CENTER>475</TD>
+<TD ALIGN=CENTER>487</TD><TD ALIGN=CENTER>500</TD><TD ALIGN=CENTER>515</TD>
+<TD ALIGN=CENTER>530</TD><TD ALIGN=CENTER>545</TD><TD ALIGN=CENTER>560</TD>
+<TD ALIGN=CENTER>580</TD></TR><TR><TD></TD><TR>
+<TR><TD><B>Charge code</B></TD>
+<TD ALIGN=CENTER>90</TD><TD ALIGN=CENTER>91</TD><TD ALIGN=CENTER>92</TD>
+<TD ALIGN=CENTER>93</TD><TD ALIGN=CENTER>94</TD><TD ALIGN=CENTER>95</TD>
+<TD ALIGN=CENTER>96</TD><TD ALIGN=CENTER>97</TD><TD ALIGN=CENTER>98</TD>
+<TD ALIGN=CENTER>99</TD></TR>
+<TR><TD><B>Max weight (kg)</B></TD>
+<TD ALIGN=CENTER>600</TD><TD ALIGN=CENTER>615</TD><TD ALIGN=CENTER>630</TD>
+<TD ALIGN=CENTER>650</TD><TD ALIGN=CENTER>670</TD><TD ALIGN=CENTER>690</TD>
+<TD ALIGN=CENTER>710</TD><TD ALIGN=CENTER>730</TD><TD ALIGN=CENTER>750</TD>
+<TD ALIGN=CENTER>775</TD></TR>
+</TABLE></CENTER>    
+
+
+<P> <!-- Footer -->
+<CENTER>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR>
+<TD><A HREF="gttintro.htm"><IMG SRC="foot_1.gif" ALT="Index" WIDTH=74 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="tecst9_e.htm"><IMG SRC="foot_2.gif" ALT="Spanish version" WIDTH=127 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="tecst9_f.htm"><IMG SRC="foot_3.gif" ALT="French version" WIDTH=121 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="http://www.etsit.upm.es/~alex/gtt/gttintro.htm"><IMG SRC="foot_4.gif" ALT="Alternate server" WIDTH=128 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="credit.htm"><IMG SRC="foot_5.gif" ALT="Alex" WIDTH=59 HEIGHT=40 BORDER=0></A></TD>
+<TD><A HREF="email.htm"><IMG SRC="foot_6.gif" ALT="Email Alex" WIDTH=119 HEIGHT=40 BORDER=0></A></TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
